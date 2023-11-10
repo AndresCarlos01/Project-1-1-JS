@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e5e5e5; /* Light gray background */
+}
+
+.navbar {
+  background-color: #020405; /* Dark gray navbar */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important; /* White text for navbar links */
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #ffffff; /* White color for navbar toggle icon */
+}
+
+.p-5 {
+  background-color: #070b42; /* Blue background for the header */
+}
+
+.container {
+  background-color: #ffffff; /* White background for containers */
+  border-radius: 10px; /* Rounded corners for containers */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for containers */
+  padding: 20px; /* Padding for containers */
+  margin-bottom: 20px; /* Bottom margin for containers */
+}
+
+.card {
+  background-color: white; /* White background for cards */
+  border: 1px solid #cbcdd0; /* Gray border for cards */
+  border-radius: 10px; /* Rounded corners for cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for cards */
+  margin-bottom: 20px; /* Bottom margin for cards */
+}
+
+.card-title {
+  color: #007bff; /* Blue color for card titles */
+}
+
+.card-text {
+  color: #495057; /* Dark gray color for card text */
+}
+
+.carousel-item {
+  text-align: center; /* Center-align text in carousel items */
+}
+
+.bg-dark {
+  background-color: #343a40 !important; /* Dark gray background for footer */
+}
+
+.text-white {
+  color: #ffffff !important; /* White color for text in footer */
+}
+
+/* Additional styles for header */
+header {
+  background-image: linear-gradient(
+    to right,
+    #070b42,
+    #020405
+  ); /* Gradient background for the header */
+  color: black; /* White text color for header */
+}
