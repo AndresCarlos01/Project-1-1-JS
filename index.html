@@ -8,12 +8,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Link to main custom styles -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to page-specific styles -->
+    <link rel="stylesheet" href="subset_expansion.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
+
+  <body class="main-body" data-bs-spy="scroll" data-bs-target="#navbarNav">
     <!-- Header -->
-    <header class="bg-primary text-white text-center py-5">
+    <header class="jumbotron main-p-5 text-white text-center py-5">
       <h1 class="display-4">Hello Everyone</h1>
       <p class="lead">
         Welcome to my personal website. Learn more about me and this course.
@@ -21,7 +25,7 @@
     </header>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="main-navbar navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Carlos Andres</a>
         <button
@@ -40,7 +44,9 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
-            <!-- Add this link to access the "Projects" section -->
+            <li class="nav-item">
+              <a class="nav-link" href="Page2/page2.html">Subset</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
@@ -50,7 +56,7 @@
     </nav>
 
     <!-- About Me Section -->
-    <div class="container mt-5 text-center" id="about">
+    <div class="main-container container mt-5 mb-5 text-center" id="about">
       <div class="row">
         <div class="col-md-8 mx-auto mb-4">
           <h2>About Me</h2>
@@ -69,7 +75,7 @@
     </div>
 
     <!-- About the Course Section -->
-    <div class="container mt-5 text-center" id="course">
+    <div class="main-container container mt-5 mb-5 text-center" id="course">
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h2>About the Course</h2>
@@ -85,19 +91,23 @@
     </div>
 
     <!-- Updated container for the "Projects" section with a card carousel -->
-    <div class="container mt-5" id="projects">
+    <div
+      class="main-container container mt-5 mb-5 p-4 main-bg-dark text-white text-center shadow"
+      id="projects"
+    >
       <h2 class="text-center">Projects</h2>
       <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Card 1 - Income Tax Calculator -->
           <div class="carousel-item active">
-            <div class="card">
+            <div class="main-card card">
               <!-- Embedding the Income Tax Calculator iframe directly in the card -->
               <iframe
                 src="IncomeTaxApp/index.html"
                 class="card-img-top"
                 width="100%"
                 height="400"
+                title="Income Tax Calculator"
               ></iframe>
               <div class="card-body"></div>
             </div>
@@ -108,7 +118,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="mt-5 p-4 bg-dark text-white text-center">
+    <div class="mt-5 p-4 main-bg-dark text-white text-center">
       <p>&copy; 2023 Carlos Andres</p>
     </div>
   </body>

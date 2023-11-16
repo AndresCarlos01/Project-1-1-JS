@@ -1,0 +1,43 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.subset-body {
+  width: 650px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border: 3px solid blue;
+}
+
+.subset-h1 {
+  font-size: 24px;
+}
+
+.subset-h2 {
+  font-size: 18px;
+  padding: 0.25em 0 0.25em 25px;
+}
+
+.hide {
+  display: none;
+}
+
+.subset-ul {
+  padding-left: 45px;
+}
+
+.subset-li {
+  padding-bottom: 8px;
+}
+
+.subset-p,
+.subset-a {
+  padding-bottom: 8px;
+  padding-left: 25px;
+}
+
+.subset-a,
+.subset-a:focus,
+.subset-a:hover {
+  color: blue;
+}
